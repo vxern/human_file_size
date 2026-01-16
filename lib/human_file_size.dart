@@ -9,6 +9,7 @@ export 'src/output_formatters/output_formatter.dart';
 export 'src/output_formatters/simple_output_formatter.dart';
 export 'src/quantity_display_modes/custom_quantity_display_mode.dart';
 export 'src/quantity_display_modes/intl_quantity_display_mode.dart';
+export 'src/quantity_display_modes/pretty_quantity_display_mode.dart';
 export 'src/quantity_display_modes/quantity_display_mode.dart';
 export 'src/quantity_display_modes/simple_quantity_display_mode.dart';
 export 'src/unit_conversions/best_fit_unit_conversion.dart';
