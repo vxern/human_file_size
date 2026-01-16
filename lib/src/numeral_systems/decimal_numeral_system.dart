@@ -35,11 +35,39 @@ class DecimalNumeralSystem extends NumeralSystem {
     Unit.yottabyte,
   ]);
 
+  static final List<Unit> _unitsBit = List.unmodifiable([
+    Unit.bit,
+    Unit.kilobit,
+    Unit.megabit,
+    Unit.gigabit,
+    Unit.terabit,
+    Unit.petabit,
+    Unit.exabit,
+    Unit.zettabit,
+    Unit.yottabit,
+  ]);
+
+  static final List<Unit> _unitsByte = List.unmodifiable([
+    Unit.byte,
+    Unit.kilobyte,
+    Unit.megabyte,
+    Unit.gigabyte,
+    Unit.terabyte,
+    Unit.petabyte,
+    Unit.exabyte,
+    Unit.zettabyte,
+    Unit.yottabyte,
+  ]);
+
   @override
-  List<Unit> get units => _units;
+  List<Unit> get units => switch (unitMagnitude) {
+        UnitMagnitude.bits => _unitsBit,
+        UnitMagnitude.bytes => _unitsByte,
+        _ => _units,
+      };
 
   /// Returns an instance of [DecimalNumeralSystem].
-  const DecimalNumeralSystem();
+  const DecimalNumeralSystem({super.unitMagnitude});
 }
 
 /// Alias of [DecimalNumeralSystem].
