@@ -3,7 +3,11 @@
 library;
 
 export 'src/numeral_systems/binary_numeral_system.dart';
+export 'src/numeral_systems/binary_numeral_system_bit_only.dart';
+export 'src/numeral_systems/binary_numeral_system_byte_only.dart';
 export 'src/numeral_systems/decimal_numeral_system.dart';
+export 'src/numeral_systems/decimal_numeral_system_bit_only.dart';
+export 'src/numeral_systems/decimal_numeral_system_byte_only.dart';
 export 'src/numeral_systems/numeral_system.dart';
 export 'src/output_formatters/output_formatter.dart';
 export 'src/output_formatters/simple_output_formatter.dart';
