@@ -13,10 +13,10 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  decimal: ^3.0.2
-  intl: ^0.19.0
+  decimal: ^3.2.4
+  intl: ^0.20.2
 
 dev_dependencies:
-  collection: ^1.18.0
-  test: ^1.25.7
-  words: ^0.4.4
+  collection: ^1.19.1
+  test: ^1.29.0
+  words: ^0.5.0
